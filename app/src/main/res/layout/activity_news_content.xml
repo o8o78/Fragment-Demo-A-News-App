@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/newsContentFrag"
+        android:name="com.example.fragmentbestpractice_newsapp.NewsContentFragment"/>
+
+</LinearLayout>
+
+<!--手机单页显示标题：内容界面-->

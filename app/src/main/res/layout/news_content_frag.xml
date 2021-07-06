@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentLayout"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newsTitle"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#333"/>
+
+        //weight=1，因此上面两个控件所占空间之外就是下方内容控件所占的空间
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/newsContent"
+            android:padding="15dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#333"/>
+
+</RelativeLayout>
